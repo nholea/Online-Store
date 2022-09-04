@@ -18,4 +18,8 @@ public class Description {
     public String getAttribute() {
         return attribute;
     }
+
+    public static void main(String[] args){
+        System.out.println("");
+    }
 }
