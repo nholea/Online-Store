@@ -1,4 +1,4 @@
-package Online.Store;
+package online.store;
 
 public class Description {
 
@@ -19,7 +19,5 @@ public class Description {
         return attribute;
     }
 
-    public static void main(String[] args){
-        System.out.println("");
-    }
+
 }

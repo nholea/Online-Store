@@ -1,4 +1,4 @@
-package Online.Store;
+package online.store;
 
 public class Product {
     private final String name;

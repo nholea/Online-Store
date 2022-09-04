@@ -4,16 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ecf9044-1385-4540-b312-104daceaf542" name="Changes" comment="&quot;  &quot;">
+    <list default="true" id="5ecf9044-1385-4540-b312-104daceaf542" name="Changes" comment="&quot;Add Store class&quot;">
       <change beforePath="$PROJECT_DIR$/.gradle/7.4.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.2/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.2/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/Online/Store/Description.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/Online/Store/Description.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/Online/Store/ProductCatalogue.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/Online/Store/ProductCatalogue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/Online/Store/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/online/store/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/Online/Store/Description.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/online/store/Description.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/Online/Store/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/online/store/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/Online/Store/ProductCatalogue.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/online/store/ProductCatalogue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/Online/Store/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/online/store/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/Online/Store/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/online/store/Store.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/Online/Store/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/online/store/AppTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,9 +35,28 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Online-Store" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Online-Store" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Online-Store" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -54,6 +80,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
     <option name="recentBranches">
       <RecentBranches>
         <option name="branchesForRepo">
@@ -92,7 +119,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "last_opened_file_path": "C:/Users/Usuario/Desktop/Projects/bank-kata-accelerate-clarity"
+    "last_opened_file_path": "C:/Users/Usuario/Desktop/CodeSherpas/tennis-kata-accelerate",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -102,11 +130,11 @@
   </component>
   <component name="RunManager" selected="Application.Store">
     <configuration name="Description" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Online.Store.Description" />
+      <option name="MAIN_CLASS_NAME" value="online.store.Description" />
       <module name="Online-Store.app.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Online.Store.*" />
+          <option name="PATTERN" value="online.store.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -115,11 +143,11 @@
       </method>
     </configuration>
     <configuration name="Store" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Online.Store.Store" />
+      <option name="MAIN_CLASS_NAME" value="online.store.Store" />
       <module name="Online-Store.app.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Online.Store.*" />
+          <option name="PATTERN" value="online.store.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -127,10 +155,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Online-Store [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.Description" />
+      <item itemvalue="Application.Store" />
+      <item itemvalue="Gradle.Online-Store [build]" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Description" />
-        <item itemvalue="Application.Store" />
+        <item itemvalue="Gradle.Online-Store [build]" />
       </list>
     </recent_temporary>
   </component>
@@ -143,6 +196,14 @@
       <option name="presentableId" value="Default" />
       <updated>1662291415686</updated>
     </task>
+    <task id="LOCAL-00001" summary="&quot;Add Store class&quot;">
+      <created>1662307768477</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1662307768477</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -158,6 +219,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="&quot;  &quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;  &quot;" />
+    <MESSAGE value="&quot;Add Store class&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Add Store class&quot;" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
