@@ -2,17 +2,17 @@ package online.store;
 
 public class Store {
 
-    private final ProductCatalogue productCatalogue;
+    private final ProductStorage productStorage;
 
-    public Store(ProductCatalogue productCatalogue) {
-        this.productCatalogue = productCatalogue;
+    public Store(ProductStorage productStorage) {
+        this.productStorage = productStorage;
     }
 
 
     public void showProductCatalogue(){
-        for(Product product : productCatalogue.findAll()) {
+        for(Product product : productStorage.findAll()) {
 
-            System.out.println(product.getProductImage() +"\n" + product.getDescription().getDescription() + "\n" + product.getDescription().getAttribute() +"\n💰 Price: " + product.getPrice() + " €\nReference: " + product.getReference()+ "\n");
+            System.out.println(product.getProductImage() +"\n" + product.getDescription().getDescription() + "\n" + product.getDescription().getAttribute() +"\n\uD83D\uDCB0 Price: " + product.getPrice() + " €\nReference: " + product.getReference()+ "\n");
         }
     }
 
