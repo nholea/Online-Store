@@ -10,6 +10,7 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/online/store/ProductStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/online/store/ProductStorage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/online/store/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/online/store/Store.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -109,7 +110,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "last_opened_file_path": "C:/Users/Usuario/Exercism/java/two-fer",
+    "last_opened_file_path": "C:/Users/Usuario/Desktop/Projects/bank-kata-accelerate-clarity",
     "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Console Font"
   }
 }]]></component>
@@ -121,8 +122,8 @@
       <recent name="online.store" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Customer">
-    <configuration name="Customer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.online.store.Customer">
+    <configuration name="online.store.Customer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="online.store.Customer" />
       <module name="Online-Store.app.main" />
       <extension name="coverage">
@@ -135,7 +136,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Description" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="online.store.Description" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="online.store.Description" />
       <module name="Online-Store.app.main" />
       <extension name="coverage">
@@ -148,7 +149,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Store" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="online.store.Store" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="online.store.Store" />
       <module name="Online-Store.app.main" />
       <extension name="coverage">
@@ -183,17 +184,17 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.Customer" />
-      <item itemvalue="Application.Description" />
-      <item itemvalue="Application.Store" />
+      <item itemvalue="Application.online.store.Customer" />
+      <item itemvalue="Application.online.store.Description" />
+      <item itemvalue="Application.online.store.Store" />
       <item itemvalue="Gradle.Online-Store [build]" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Customer" />
+        <item itemvalue="Application.online.store.Customer" />
         <item itemvalue="Gradle.Online-Store [build]" />
-        <item itemvalue="Application.Store" />
-        <item itemvalue="Application.Description" />
+        <item itemvalue="Application.online.store.Store" />
+        <item itemvalue="Application.online.store.Description" />
       </list>
     </recent_temporary>
   </component>
