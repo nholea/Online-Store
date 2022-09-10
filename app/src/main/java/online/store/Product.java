@@ -35,4 +35,14 @@ public class Product {
     public String getReference(){
         return reference;
     }
+
+    public String outputProductFormat() {
+        return productImage
+                +"\n" + description.getDescription()
+                + "\n" + description.getAttribute()
+                +"\n\uD83D\uDCB0 Price: " + price
+                +" €\nReference: " + reference+ "\n";
+    }
+
+
 }
