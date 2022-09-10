@@ -2,16 +2,18 @@ package online.store;
 
 public class Store {
 
-    private final OutputProductFormat outputProductFormat;
+    private final ProductStorage productStorage;
 
 
-    public Store(OutputProductFormat outputProductFormat) {
-        this.outputProductFormat = outputProductFormat;
+    public Store(ProductStorage productStorage) {
+        this.productStorage = productStorage;
 
     }
 
     public void showProductCatalogue(){
-        outputProductFormat.productFormat();
+        for(Product product : productStorage.findAll()){
+            System.out.println(product.outputProductFormat());
+        }
 
     }
 
