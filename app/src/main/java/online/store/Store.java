@@ -4,11 +4,10 @@ public class Store {
 
     private final ProductStorage productStorage = new ProductStorage();
 
-    public void showProductCatalogue(){
-        for(Product product : productStorage.findAll()){
-            System.out.println(product.outputProductFormat());
-        }
+    private final ProductFormat productFormat = new ProductFormat();
 
+    public void showProductCatalogue(){
+        System.out.println(productFormat.outputProductFormat(productStorage.findAll()));
     }
 
 
