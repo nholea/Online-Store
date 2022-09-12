@@ -7,7 +7,14 @@ public class Store {
     private final ProductFormat productFormat = new ProductFormat();
 
     public void showProductCatalogue(){
-        System.out.println(productFormat.outputProductFormat(productStorage.findAll()));
+        String outputProductFormat = productFormat.outputProductFormat(productStorage.findAll());
+        System.out.println(outputProductFormat);
+    }
+
+    public void showProductDetailsByReference(String reference){
+        Product productFound = productStorage.findByReference(reference);
+        String outputProductFormat = productFormat.outputProductFormatByReference(productFound);
+        System.out.println(outputProductFormat);
     }
 
 
