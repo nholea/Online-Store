@@ -6,28 +6,74 @@ import java.util.ArrayList;
 public class ProductFormat {
 
 
-    public String outputProductFormat(ArrayList<Product>products) {
-        StringBuilder formatProduct = new StringBuilder();
-        for(Product product : products){
-            formatProduct.append(product.getProductImage());
-            formatProduct.append("\n");
+    public String outputProductFormat(ArrayList<Product> products) {
+        StringBuilder productFormat = new StringBuilder();
+        for (Product product : products) {
+            productFormat.append(product.getProductImage());
+            productFormat.append("\n");
 
-            formatProduct.append(product.getDescription().getDescription());
-            formatProduct.append("\n");
+            productFormat.append(product.getDescription().getDescription());
+            productFormat.append("\n");
 
-            formatProduct.append(product.getDescription().getAttribute());
-            formatProduct.append("\n");
+            productFormat.append(product.getDescription().getAttribute());
+            productFormat.append("\n");
 
             String priceFormat = "\uD83D\uDCB0 Price: %s €";
-            formatProduct.append(String.format(priceFormat,product.getPrice()));
-            formatProduct.append("\n");
+            productFormat.append(String.format(priceFormat, product.getPrice()));
+            productFormat.append("\n");
 
-            String referenceFormat = "Reference: %s \n";
-            formatProduct.append(String.format(referenceFormat,product.getReference()));
-            formatProduct.append("\n");
+            String referenceFormat = "Reference: %s";
+            productFormat.append(String.format(referenceFormat, product.getReference()));
+            productFormat.append("\n");
+
+            String unitsInStockFormat = "%s left\n";
+            productFormat.append(String.format(unitsInStockFormat, product.getUnitsInStock()));
+            productFormat.append("\n");
 
         }
-        return formatProduct.toString();
+        return productFormat.toString();
+
+    }
+
+    public String outputProductFormatByReference(Product product) {
+        StringBuilder productFormat = new StringBuilder();
+
+        productFormat.append(product.getProductImage());
+        productFormat.append("\n");
+
+        String referenceFormat = "Reference: %s ";
+        productFormat.append(String.format(referenceFormat, product.getReference()));
+        productFormat.append("\n");
+
+        String priceFormat = "\uD83D\uDCB0 Price: %s €";
+        productFormat.append(String.format(priceFormat, product.getPrice()));
+        productFormat.append("\n");
+
+        String unitsInStockFormat = "%s left\n";
+        productFormat.append(String.format(unitsInStockFormat, product.getUnitsInStock()));
+        productFormat.append("\n");
+
+        productFormat.append("SUMMARY:");
+        productFormat.append("\n");
+
+        productFormat.append(product.getDescription().getDescription());
+        productFormat.append("\n\n");
+
+        productFormat.append("DESCRIPTION:");
+        productFormat.append("\n");
+
+        productFormat.append(product.getDescription().getAttribute());
+        productFormat.append("\n\n");
+
+        productFormat.append("What would you like to do next?");
+        productFormat.append("\n");
+        productFormat.append("1. Add product to cart.");
+        productFormat.append("\n");
+        productFormat.append("2. Keep browsing the catalog.");
+        productFormat.append("\n");
+
+        return productFormat.toString();
+
 
     }
 
