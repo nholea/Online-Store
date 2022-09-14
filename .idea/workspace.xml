@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ecf9044-1385-4540-b312-104daceaf542" name="Changes" comment="&quot;Add Store class&quot;">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/online/store/ProductStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/online/store/ProductStorage.java" afterDir="false" />
-    </list>
+    <list default="true" id="5ecf9044-1385-4540-b312-104daceaf542" name="Changes" comment="&quot;Add Store class&quot;" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

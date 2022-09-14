@@ -35,7 +35,7 @@ public class ProductFormat {
 
     }
 
-    public String outputProductFormatByReference(Product product) {
+    public String outputProductDetailsFormat(Product product) {
         StringBuilder productFormat = new StringBuilder();
 
         productFormat.append(product.getProductImage());
@@ -64,13 +64,6 @@ public class ProductFormat {
 
         productFormat.append(product.getDescription().getAttribute());
         productFormat.append("\n\n");
-
-        productFormat.append("What would you like to do next?");
-        productFormat.append("\n");
-        productFormat.append("1. Add product to cart.");
-        productFormat.append("\n");
-        productFormat.append("2. Keep browsing the catalog.");
-        productFormat.append("\n");
 
         return productFormat.toString();
 

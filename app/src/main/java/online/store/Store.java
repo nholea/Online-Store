@@ -13,7 +13,7 @@ public class Store {
 
     public void showProductDetailsByReference(String reference){
         Product productFound = productStorage.findByReference(reference);
-        String outputProductFormat = productFormat.outputProductFormatByReference(productFound);
+        String outputProductFormat = productFormat.outputProductDetailsFormat(productFound);
         System.out.println(outputProductFormat);
     }
 
