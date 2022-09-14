@@ -2,18 +2,19 @@ package online.store;
 
 public class Store {
 
-    private final ProductCatalogue productCatalogue;
+    private final ProductStorage productStorage = new ProductStorage();
 
-    public Store(ProductCatalogue productCatalogue) {
-        this.productCatalogue = productCatalogue;
-    }
-
+    private final ProductFormat productFormat = new ProductFormat();
 
     public void showProductCatalogue(){
-        for(Product product : productCatalogue.findAll()) {
+        String outputProductFormat = productFormat.outputProductFormat(productStorage.findAll());
+        System.out.println(outputProductFormat);
+    }
 
-            System.out.println(product.getProductImage() +"\n" + product.getDescription().getDescription() + "\n" + product.getDescription().getAttribute() +"\n💰 Price: " + product.getPrice() + " €\nReference: " + product.getReference()+ "\n");
-        }
+    public void showProductDetailsByReference(String reference){
+        Product productFound = productStorage.findByReference(reference);
+        String outputProductFormat = productFormat.outputProductDetailsFormat(productFound);
+        System.out.println(outputProductFormat);
     }
 
 
