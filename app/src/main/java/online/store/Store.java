@@ -22,6 +22,9 @@ public class Store {
     public void showProductsWithLowerPrice(Double price){
         ArrayList<Product> productsFound = productStorage.filterByPrice(price);
         String outputProductFormat = productFormat.outputProductFormat(productsFound);
+        if (productsFound.size() ==0){
+            System.out.println("No products found below this price");
+        }
         System.out.println(outputProductFormat);
     }
 
