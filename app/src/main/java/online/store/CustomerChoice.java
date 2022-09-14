@@ -6,7 +6,7 @@ public class CustomerChoice {
 
     public final Store store = new Store();
 
-    public void ProductDetails(){
+    public void productDetails(){
         System.out.println("Which product would you like to explore? - Introduce a product's reference.");
         Scanner input = new Scanner(System.in);
         String inputReference = input.nextLine();
