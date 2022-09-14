@@ -7,4 +7,6 @@ public interface ProductRepository {
     ArrayList<Product> findAll();
 
     Product findByReference(String reference);
+
+    ArrayList<Product> filterByPrice(Double price);
 }
