@@ -27,7 +27,7 @@ public class ProductStorage implements ProductRepository{
                     "\uD83D\uDCF1" ,
                     new Description("New mobile phone model,512 GB",
                             "With this mobile phone, you will be able to take all kinds of photos thanks to its amazing camera.\n" +
-                                    "You no longer have to worry about memory storage.\n"),
+                                    "You no longer have to worry about memory storage."),
                     459.25,
                     "Z8T",
                     5)));
