@@ -41,12 +41,12 @@ public class ProductFormat {
         productFormat.append(product.getProductImage());
         productFormat.append("\n");
 
-        String referenceFormat = "Reference: %s ";
-        productFormat.append(String.format(referenceFormat, product.getReference()));
-        productFormat.append("\n");
-
         String priceFormat = "\uD83D\uDCB0 Price: %s €";
         productFormat.append(String.format(priceFormat, product.getPrice()));
+        productFormat.append("\n");
+
+        String referenceFormat = "Reference: %s ";
+        productFormat.append(String.format(referenceFormat, product.getReference()));
         productFormat.append("\n");
 
         String unitsInStockFormat = "%s left\n";

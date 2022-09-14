@@ -6,20 +6,10 @@ public class Customer {
 
     public static void main(String[] args){
         Store store = new Store();
+        CustomerChoice customerChoice = new CustomerChoice();
         store.showProductCatalogue();
 
-        System.out.println("Which product would you like to explore? - Introduce a product's reference.");
-        Scanner input = new Scanner(System.in);
-        String inputReference = input.nextLine();
-        store.showProductDetailsByReference(inputReference);
+        customerChoice.ProductDetails();
 
-        System.out.println("¿What would you like to do next?\n" +
-                            "1. Add product to cart\n" +
-                            "2. Keep browsing products\n");
-
-        int inputChoice = input.nextInt();
-        if (inputChoice == 2) {
-            store.showProductCatalogue();
-        }
     }
 }
