@@ -48,6 +48,17 @@ public class ProductStorage implements ProductRepository{
         return productFound;
     }
 
+    @Override
+    public ArrayList<Product> filterByPrice(Double price){
+        ArrayList<Product> productsLessPrice = new ArrayList<>();
+        for (Product product : findAll()){
+            if (product.getPrice() < price){
+                productsLessPrice.add(product);
+            }
+        }
+        return productsLessPrice;
+    }
+
 
 }
 

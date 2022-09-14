@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5ecf9044-1385-4540-b312-104daceaf542" name="Changes" comment="&quot;Add Store class&quot;">
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/online/store/ProductStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/online/store/ProductStorage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,12 +75,12 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
-                    <option name="branchName" value="feature2" />
-                    <option name="lastUsedInstant" value="1663160631" />
+                    <option name="branchName" value="feature3" />
+                    <option name="lastUsedInstant" value="1663160759" />
                   </RecentBranch>
                   <RecentBranch>
-                    <option name="branchName" value="feature3" />
-                    <option name="lastUsedInstant" value="1663156896" />
+                    <option name="branchName" value="feature2" />
+                    <option name="lastUsedInstant" value="1663160631" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="feedback" />
