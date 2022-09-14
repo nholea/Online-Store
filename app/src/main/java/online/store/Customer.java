@@ -6,20 +6,37 @@ public class Customer {
 
     public static void main(String[] args){
         Store store = new Store();
-        store.showProductCatalogue();
-
-        System.out.println("Which product would you like to explore? - Introduce a product's reference.");
+        double inputPrice;
+        int inputChoice;
+        System.out.println("Browse products with prices lower than:");
         Scanner input = new Scanner(System.in);
-        String inputReference = input.nextLine();
-        store.showProductDetailsByReference(inputReference);
+        inputPrice = input.nextDouble();
+        store.showProductsWithLowerPrice(inputPrice);
 
         System.out.println("¿What would you like to do next?\n" +
-                            "1. Add product to cart\n" +
-                            "2. Keep browsing products\n");
+                            "2. Keep browsing the catalog\n"+
+                            "3. See a product's details.");
 
-        int inputChoice = input.nextInt();
+        inputChoice = input.nextInt();
+
         if (inputChoice == 2) {
-            store.showProductCatalogue();
+          //("Browse products with prices lower than:");
+            //inputPrice = input.nextDouble();
+            store.showProductsWithLowerPrice(inputPrice);
+           // System.out.println("¿What would you like to do next?\n" +
+                   // "2. Keep browsing the catalog\n"+
+                   // "3. See a product's details.");
+
+          //  inputChoice = input.nextInt();
         }
+
+        if (inputChoice == 3){
+            Scanner scanner = new Scanner(System.in);
+            System.out.println("Enter a product's reference:");
+            String inputReference = scanner.nextLine();
+            store.showProductDetailsByReference(inputReference);
+
+        }
+
     }
 }

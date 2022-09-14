@@ -39,13 +39,12 @@ public class ProductStorage implements ProductRepository{
 
     @Override
     public Product findByReference(String reference){
-        Product productFound = null;
         for(Product product : findAll()){
             if (product.getReference().equals(reference)){
-                productFound = product;
+                return product;
             }
         }
-        return productFound;
+        throw new RuntimeException("Product with this reference does not exist in our storage");
     }
 
     @Override
@@ -58,6 +57,9 @@ public class ProductStorage implements ProductRepository{
         }
         return productsLessPrice;
     }
+
+
+
 
 
 }
