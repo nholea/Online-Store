@@ -22,7 +22,15 @@ public class ProductStorage implements ProductRepository{
                                                 "will be ready to move to a building far away from you."),
                        1003.00,
                        "X4A",
-                       100)));
+                       100),
+            new Product("Mobile Phone",
+                    "\uD83D\uDCF1" ,
+                    new Description("New mobile phone model,512 GB",
+                            "With this mobile phone, you will be able to take all kinds of photos thanks to its amazing camera.\n" +
+                                    "You no longer have to worry about memory storage.\n"),
+                    459.25,
+                    "Z8T",
+                    5)));
 
     @Override
     public ArrayList<Product> findAll(){
