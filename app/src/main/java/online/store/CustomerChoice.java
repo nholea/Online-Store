@@ -20,9 +20,11 @@ public class CustomerChoice {
         String inputReference = input.nextLine();
         store.showProductDetailsByReference(inputReference);
 
-        System.out.println("¿What would you like to do next?\n" +
-                "1. Add product to cart\n" +
-                "2. Keep browsing products\n");
+        System.out.println("""
+                ¿What would you like to do next?
+                1. Add product to cart
+                2. Keep browsing products
+                """);
 
         return input.nextInt();
     }
