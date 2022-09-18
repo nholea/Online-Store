@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5ecf9044-1385-4540-b312-104daceaf542" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/online/store/CustomerChoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/online/store/CustomerChoice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/online/store/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/online/store/Store.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +59,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feedback" />
+        <entry key="$PROJECT_DIR$" value="feature2" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -76,8 +74,12 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
+                    <option name="branchName" value="feature3" />
+                    <option name="lastUsedInstant" value="1663187758" />
+                  </RecentBranch>
+                  <RecentBranch>
                     <option name="branchName" value="feature2" />
-                    <option name="lastUsedInstant" value="1663003056" />
+                    <option name="lastUsedInstant" value="1663187710" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="feedback" />
@@ -214,11 +216,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ProductStorage" />
-        <item itemvalue="Application.online.store.Customer" />
         <item itemvalue="Gradle.Online-Store [build]" />
         <item itemvalue="Application.online.store.Store" />
         <item itemvalue="Application.online.store.Description" />
+        <item itemvalue="Application.online.store.Customer" />
+        <item itemvalue="Application.ProductStorage" />
       </list>
     </recent_temporary>
   </component>
