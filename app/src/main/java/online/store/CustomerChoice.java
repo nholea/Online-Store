@@ -7,28 +7,22 @@ public class CustomerChoice {
 
     public final Store store = new Store();
 
-    public void productDetails(){
-        System.out.println("Which product would you like to explore? - Introduce a product's reference.");
-        Scanner input = new Scanner(System.in);
-        String inputReference = input.nextLine();
-        store.showProductDetailsByReference(inputReference);
+    public void filterProductsByPrice() {
+        int inputCustomerChoice = customerActions();
 
-        System.out.println("""
-                ¿What would you like to do next?
-                1. Add product to cart
-                2. Keep browsing products
-                """);
+        if (customerDesires(inputCustomerChoice, 2)) {
+            filterProductsByPrice();
 
-        int inputChoice = input.nextInt();
-        if (inputChoice == 2) {
-            store.showProductCatalogue();
+        } else if (customerDesires(inputCustomerChoice, 3)) {
+            productDetailsByReference();
         }
+
     }
 
-    public void filterProductsByPrice(){
-        System.out.println("Browse products with prices lowe than:");
+    private int customerActions() {
+        System.out.println("Browse products with prices lower than:");
         Scanner input = new Scanner(System.in).useLocale(Locale.US);
-        Double inputPrice = input.nextDouble();
+        double inputPrice = input.nextDouble();
         store.showProductsWithLowerPrice(inputPrice);
 
         System.out.println("""
@@ -36,28 +30,18 @@ public class CustomerChoice {
                 2. Keep browsing the catalog
                 3. See a product's details.""");
 
-        int inputChoice = input.nextInt();
-
-        while(inputChoice == 2) {
-            System.out.println("Browse products with prices lowe than:");
-            input = new Scanner(System.in).useLocale(Locale.US);
-            inputPrice = input.nextDouble();
-            store.showProductsWithLowerPrice(inputPrice);
-
-            System.out.println("""
-                ¿What would you like to do next?
-                2. Keep browsing the catalog
-                3. See a product's details.""");
-
-            inputChoice = input.nextInt();
-        }
-
-        if (inputChoice == 3) {
-            System.out.println("Enter a product's reference:");
-            Scanner scanner = new Scanner(System.in);
-            String inputReference = scanner.nextLine();
-            store.showProductDetailsByReference(inputReference);
-        }
-
+        return input.nextInt();
     }
+
+    private void productDetailsByReference() {
+        System.out.println("Enter a product's reference:");
+        Scanner scanner = new Scanner(System.in);
+        String inputReference = scanner.nextLine();
+        store.showProductDetailsByReference(inputReference);
+    }
+
+    private static boolean customerDesires(int inputCustomerChoice, int choice) {
+        return inputCustomerChoice == choice;
+    }
+
 }
