@@ -9,66 +9,63 @@ public class ProductFormat {
     public String outputProductFormat(ArrayList<Product> products) {
         StringBuilder productFormat = new StringBuilder();
         for (Product product : products) {
-            productFormat.append(product.getProductImage());
-            productFormat.append("\n");
+            productAspectsFormat(productFormat, product.getProductImage());
 
-            productFormat.append(product.getDescription().getDescription());
-            productFormat.append("\n");
+            productAspectsFormat(productFormat, product.getDescription().getDescription());
 
-            productFormat.append(product.getDescription().getAttribute());
-            productFormat.append("\n");
+            productAspectsFormat(productFormat, product.getDescription().getAttribute());
 
-            String priceFormat = "\uD83D\uDCB0 Price: %s €";
-            productFormat.append(String.format(priceFormat, product.getPrice()));
-            productFormat.append("\n");
+            productDetailsFormat(productFormat, String.valueOf(product.getPrice()), "\uD83D\uDCB0 Price: %s €");
 
-            String referenceFormat = "Reference: %s";
-            productFormat.append(String.format(referenceFormat, product.getReference()));
-            productFormat.append("\n");
+            productDetailsFormat(productFormat, product.getReference(), "Reference: %s");
 
-            String unitsInStockFormat = "%s left\n";
-            productFormat.append(String.format(unitsInStockFormat, product.getUnitsInStock()));
-            productFormat.append("\n");
+            productDetailsFormat(productFormat, String.valueOf(product.getUnitsInStock()),"%s left\n");
+
 
         }
         return productFormat.toString();
 
     }
 
+
     public String outputProductDetailsFormat(Product product) {
         StringBuilder productFormat = new StringBuilder();
 
-        productFormat.append(product.getProductImage());
-        productFormat.append("\n");
+        productAspectsFormat(productFormat, product.getProductImage());
 
-        String priceFormat = "\uD83D\uDCB0 Price: %s €";
-        productFormat.append(String.format(priceFormat, product.getPrice()));
-        productFormat.append("\n");
+        productDetailsFormat(productFormat, String.valueOf(product.getPrice()), "\uD83D\uDCB0 Price: %s €");
 
-        String referenceFormat = "Reference: %s ";
-        productFormat.append(String.format(referenceFormat, product.getReference()));
-        productFormat.append("\n");
+        productDetailsFormat(productFormat, product.getReference(), "Reference: %s");
 
-        String unitsInStockFormat = "%s left\n";
-        productFormat.append(String.format(unitsInStockFormat, product.getUnitsInStock()));
-        productFormat.append("\n");
+        productDetailsFormat(productFormat, String.valueOf(product.getUnitsInStock()),"%s left\n");
 
-        productFormat.append("SUMMARY:");
-        productFormat.append("\n");
+        addExplanatoryTitle(productFormat, "SUMMARY:");
 
-        productFormat.append(product.getDescription().getDescription());
-        productFormat.append("\n\n");
+        productAspectsFormat(productFormat, product.getDescription().getDescription());
 
-        productFormat.append("DESCRIPTION:");
-        productFormat.append("\n");
+        addExplanatoryTitle(productFormat, "\nDESCRIPTION:");
 
-        productFormat.append(product.getDescription().getAttribute());
-        productFormat.append("\n\n");
+        productAspectsFormat(productFormat, product.getDescription().getAttribute());
 
         return productFormat.toString();
 
 
     }
+    private static void productAspectsFormat(StringBuilder productBuilder, String product) {
+        productBuilder.append(product);
+        productBuilder.append("\n");
+    }
+    private static void productDetailsFormat(StringBuilder productFormat, String product, String fieldProductFormat) {
+        productFormat.append(String.format(fieldProductFormat, product));
+        productFormat.append("\n");
+    }
+
+    private static void addExplanatoryTitle(StringBuilder productFormat, String title) {
+        productFormat.append(title);
+        productFormat.append("\n");
+    }
+
+
 
 
 }
