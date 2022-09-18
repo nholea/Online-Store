@@ -3,7 +3,7 @@ package online.store;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class ProductStorage implements ProductRepository{
+public class ProductStorage {
 
     private final ArrayList<Product> products = new ArrayList<>(Arrays.asList(
             new Product("Television",
@@ -32,12 +32,12 @@ public class ProductStorage implements ProductRepository{
                     "Z8T",
                     5)));
 
-    @Override
+
     public ArrayList<Product> findAll(){
         return products;
     }
 
-    @Override
+
     public Product findByReference(String reference){
         for(Product product : findAll()){
             if (product.getReference().equals(reference)){

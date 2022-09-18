@@ -9,7 +9,7 @@ public class Customer {
         CustomerChoice customerChoice = new CustomerChoice();
         store.showProductCatalogue();
 
-        customerChoice.ProductDetails();
+        customerChoice.productDetails();
 
     }
 }
