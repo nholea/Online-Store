@@ -1,19 +1,26 @@
 package online.store;
 
+import java.util.ArrayList;
+
 public class Store {
 
-    private final ProductCatalogue productCatalogue;
+    private final ProductStorage productStorage = new ProductStorage();
 
-    public Store(ProductCatalogue productCatalogue) {
-        this.productCatalogue = productCatalogue;
+    private final ProductFormat productFormat = new ProductFormat();
+
+    public void showProductDetailsByReference(String reference){
+        Product productFound = productStorage.findByReference(reference);
+        String outputProductFormat = productFormat.outputProductDetailsFormat(productFound);
+        System.out.println(outputProductFormat);
     }
 
-
-    public void showProductCatalogue(){
-        for(Product product : productCatalogue.findAll()) {
-
-            System.out.println(product.getProductImage() +"\n" + product.getDescription().getDescription() + "\n" + product.getDescription().getAttribute() +"\n💰 Price: " + product.getPrice() + " €\nReference: " + product.getReference()+ "\n");
+    public void showProductsWithLowerPrice(Double price){
+        ArrayList<Product> productsFound = productStorage.filterByPrice(price);
+        String outputProductFormat = productFormat.outputProductFormat(productsFound);
+        if (productsFound.size() ==0){
+            System.out.println("No products found below this price");
         }
+        System.out.println(outputProductFormat);
     }
 
 
