@@ -1,6 +1,7 @@
 package online.store;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class ShoppingCart {
 
@@ -12,4 +13,14 @@ public class ShoppingCart {
     public ArrayList<Product> findAll(){
         return products;
     }
+
+    public double totalProductPrice(Product product) {
+        return product.getPrice() * product.getUnitsInStock();
+    }
+
+    public double totalSumProductPrice() {
+        return findAll().stream().mapToDouble(product -> product.getPrice()* product.getUnitsInStock()).sum();
+    }
+
+
 }
