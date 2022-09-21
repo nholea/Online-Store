@@ -5,15 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5ecf9044-1385-4540-b312-104daceaf542" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.2/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.2/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/online/store/CustomerChoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/online/store/CustomerChoice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/online/store/ProductFormat.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/online/store/ProductFormat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/online/store/ProductRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/online/store/ProductStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/online/store/ProductStorage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/online/store/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/online/store/Store.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,8 +75,12 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
+                    <option name="branchName" value="feature4" />
+                    <option name="lastUsedInstant" value="1663764668" />
+                  </RecentBranch>
+                  <RecentBranch>
                     <option name="branchName" value="feature3" />
-                    <option name="lastUsedInstant" value="1663187758" />
+                    <option name="lastUsedInstant" value="1663764649" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="feature2" />
