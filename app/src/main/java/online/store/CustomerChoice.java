@@ -5,7 +5,10 @@ import java.util.Scanner;
 
 public class CustomerChoice {
 
-    public final Store store = new Store();
+    private final Store store = new Store();
+    private final ShoppingCart shoppingCart = new ShoppingCart();
+
+    private final ProductStorage productStorage = new ProductStorage();
 
     public void filterProductsByPrice() {
         int inputCustomerChoice = customerActions();
@@ -14,10 +17,14 @@ public class CustomerChoice {
             filterProductsByPrice();
 
         } else if (customerDesires(inputCustomerChoice, 3)) {
-            productDetailsByReference();
+            shoppingCartOptions();
         }
 
     }
+    private static boolean customerDesires(int inputCustomerChoice, int choice) {
+        return inputCustomerChoice == choice;
+    }
+
 
     private int customerActions() {
         System.out.println("Browse products with prices lower than:");
@@ -33,15 +40,43 @@ public class CustomerChoice {
         return input.nextInt();
     }
 
-    private void productDetailsByReference() {
+    private Product productDetailsByReference() {
         System.out.println("Enter a product's reference:");
         Scanner scanner = new Scanner(System.in);
         String inputReference = scanner.nextLine();
+        Product productFoundByReference = productStorage.findByReference(inputReference);
         store.showProductDetailsByReference(inputReference);
+        return productFoundByReference;
     }
 
-    private static boolean customerDesires(int inputCustomerChoice, int choice) {
-        return inputCustomerChoice == choice;
+    private void shoppingCartOptions() {
+        Product productSelected = productDetailsByReference();
+        int inputsCustomerCartChoice = addSelectedProductToCart(productSelected);
+
+        if (customerDesires(inputsCustomerCartChoice, 2)) {
+            filterProductsByPrice();
+        }else if (customerDesires(inputsCustomerCartChoice, 3)) {
+            productDetailsByReference();
+        }
     }
+
+    private int addSelectedProductToCart(Product productSelected) {
+        System.out.println("Would you like to add this product to the cart?");
+        Scanner scanner = new Scanner(System.in);
+        String customerResponse = scanner.nextLine();
+
+        if(customerResponse.equals("YES")){
+            shoppingCart.addProduct(productSelected);
+            System.out.println(productSelected.getDescription().getDescription() + " was added to cart\n");
+        }
+        System.out.println("""
+                ¿What would you like to do next?
+                2. Keep browsing the catalog
+                3. See a product's details.""");
+
+        return scanner.nextInt();
+    }
+
+
 
 }
