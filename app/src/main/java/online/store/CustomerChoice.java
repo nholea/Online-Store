@@ -67,6 +67,7 @@ public class CustomerChoice {
 
         if(customerResponse.equals("YES")){
             shoppingCart.addProduct(productSelected);
+            shoppingCart.totalProductPrice(productSelected);
             System.out.println("\n" + productSelected.getDescription().getDescription() + " was added to cart\n");
         }
         System.out.println("""

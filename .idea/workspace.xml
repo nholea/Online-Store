@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ecf9044-1385-4540-b312-104daceaf542" name="Changes" comment="" />
+    <list default="true" id="5ecf9044-1385-4540-b312-104daceaf542" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.2/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/online/store/CustomerChoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/online/store/CustomerChoice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/online/store/ShoppingCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/online/store/ShoppingCart.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,7 +64,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature2" />
+        <entry key="$PROJECT_DIR$" value="feature4" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -71,6 +78,10 @@
             <RecentBranchesForRepo>
               <option name="branches">
                 <list>
+                  <RecentBranch>
+                    <option name="branchName" value="feature5" />
+                    <option name="lastUsedInstant" value="1663787280" />
+                  </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="feature4" />
                     <option name="lastUsedInstant" value="1663764668" />
@@ -86,10 +97,6 @@
                   <RecentBranch>
                     <option name="branchName" value="feedback" />
                     <option name="lastUsedInstant" value="1662291970" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="main" />
-                    <option name="lastUsedInstant" value="1662291828" />
                   </RecentBranch>
                 </list>
               </option>
@@ -134,9 +141,9 @@
       <recent name="online.store" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.online.store.Customer">
-    <configuration name="ProductStorage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="online.store.ProductStorage" />
+  <component name="RunManager" selected="Application.ShoppingCart">
+    <configuration name="ShoppingCart" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="online.store.ShoppingCart" />
       <module name="Online-Store.app.main" />
       <extension name="coverage">
         <pattern>
@@ -209,7 +216,7 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.ProductStorage" />
+      <item itemvalue="Application.ShoppingCart" />
       <item itemvalue="Application.online.store.Customer" />
       <item itemvalue="Application.online.store.Description" />
       <item itemvalue="Application.online.store.Store" />
@@ -217,11 +224,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ShoppingCart" />
         <item itemvalue="Gradle.Online-Store [build]" />
         <item itemvalue="Application.online.store.Store" />
         <item itemvalue="Application.online.store.Description" />
         <item itemvalue="Application.online.store.Customer" />
-        <item itemvalue="Application.ProductStorage" />
       </list>
     </recent_temporary>
   </component>
