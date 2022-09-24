@@ -5,6 +5,8 @@ import java.util.ArrayList;
 
 public class ProductFormat {
 
+    ShoppingCart shoppingCart = new ShoppingCart();
+
     public String outputProductFormat(ArrayList<Product> products) {
         StringBuilder productFormat = new StringBuilder();
         for (Product product : products) {
@@ -48,6 +50,32 @@ public class ProductFormat {
 
         return productFormat.toString();
 
+    }
+
+    public String outputShoppingCartContent(ArrayList<Product> shoppingCartProducts) {
+        StringBuilder shoppingCartFormat = new StringBuilder();
+        addExplanatoryTitle(shoppingCartFormat, "**** SHOPPING CART ****\n");
+        for (Product product : shoppingCartProducts) {
+            productAspectsFormat(shoppingCartFormat, product.getProductImage());
+
+            productAspectsFormat(shoppingCartFormat, product.getDescription().getDescription());
+
+            addExplanatoryTitle(shoppingCartFormat, "---");
+
+            productDetailsFormat(shoppingCartFormat, String.valueOf(product.getPrice()), "\uD83D\uDCB0 Price: %s €");
+
+            productDetailsFormat(shoppingCartFormat, product.getReference(), "Reference: %s");
+
+            productDetailsFormat(shoppingCartFormat, String.valueOf(product.getUnitsInStock()),"%s left");
+
+            productDetailsFormat(shoppingCartFormat, String.valueOf(shoppingCart.totalProductPrice(product)), "Subtotal: %s");
+
+            addExplanatoryTitle(shoppingCartFormat, "---");
+        }
+        shoppingCartFormat.append(String.format("TOTAL: %s", shoppingCart.totalSumProductPrice(shoppingCartProducts)));
+        shoppingCartFormat.append("\n\n");
+        addExplanatoryTitle(shoppingCartFormat, "*************************");
+        return shoppingCartFormat.toString();
 
     }
     private static void productAspectsFormat(StringBuilder productBuilder, String product) {
