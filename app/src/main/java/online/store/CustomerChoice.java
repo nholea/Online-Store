@@ -10,13 +10,16 @@ public class CustomerChoice {
 
     private final ProductStorage productStorage = new ProductStorage();
 
+    private final ProductFormat productFormat = new ProductFormat();
+
     public void filterProductsByPrice() {
         int inputCustomerChoice = customerActions();
 
         if (customerDesires(inputCustomerChoice, 2)) {
             filterProductsByPrice();
 
-        } else if (customerDesires(inputCustomerChoice, 3)) {
+        }
+        if (customerDesires(inputCustomerChoice, 3)) {
             shoppingCartOptions();
         }
 
@@ -53,10 +56,16 @@ public class CustomerChoice {
         Product productSelected = productDetailsByReference();
         int inputsCustomerCartChoice = addSelectedProductToCart(productSelected);
 
+
         if (customerDesires(inputsCustomerCartChoice, 2)) {
             filterProductsByPrice();
-        }else if (customerDesires(inputsCustomerCartChoice, 3)) {
+        }
+        if (customerDesires(inputsCustomerCartChoice, 3)) {
             productDetailsByReference();
+        }
+        if (customerDesires(inputsCustomerCartChoice, 4)) {
+            shoppingCartContent();
+
         }
     }
 
@@ -73,9 +82,26 @@ public class CustomerChoice {
         System.out.println("""
                 ¿What would you like to do next?
                 2. Keep browsing the catalog
-                3. See a product's details.""");
+                3. See a product's details.
+                4. Go to checkout""");
 
         return scanner.nextInt();
+    }
+
+    private void shoppingCartContent(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println(productFormat.outputShoppingCartContent(shoppingCart.findAll()));
+        System.out.println("""
+                ¿What would you like to do next?
+                2. Keep browsing the catalog
+                5. Confirm Purchase and Pay""");
+
+        int checkoutOption =scanner.nextInt();
+
+        if (checkoutOption == 2){
+            store.showProductCatalogue();
+        }
+
     }
 
 

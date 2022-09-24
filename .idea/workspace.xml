@@ -4,13 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ecf9044-1385-4540-b312-104daceaf542" name="Changes" comment="">
+    <list default="true" id="5ecf9044-1385-4540-b312-104daceaf542" name="Changes" comment="&quot;Add Store class&quot;">
       <change beforePath="$PROJECT_DIR$/.gradle/7.4.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.2/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.2/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/online/store/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/online/store/Customer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/online/store/CustomerChoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/online/store/CustomerChoice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/online/store/ProductFormat.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/online/store/ProductFormat.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/online/store/ShoppingCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/online/store/ShoppingCart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/online/store/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/online/store/Store.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +68,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature4" />
+        <entry key="$PROJECT_DIR$" value="feature5" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -78,6 +82,10 @@
             <RecentBranchesForRepo>
               <option name="branches">
                 <list>
+                  <RecentBranch>
+                    <option name="branchName" value="feature6" />
+                    <option name="lastUsedInstant" value="1664033686" />
+                  </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="feature5" />
                     <option name="lastUsedInstant" value="1663787280" />
@@ -93,10 +101,6 @@
                   <RecentBranch>
                     <option name="branchName" value="feature2" />
                     <option name="lastUsedInstant" value="1663187710" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="feedback" />
-                    <option name="lastUsedInstant" value="1662291970" />
                   </RecentBranch>
                 </list>
               </option>
@@ -141,7 +145,7 @@
       <recent name="online.store" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ShoppingCart">
+  <component name="RunManager" selected="Application.online.store.Customer">
     <configuration name="ShoppingCart" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="online.store.ShoppingCart" />
       <module name="Online-Store.app.main" />

@@ -8,6 +8,10 @@ public class Store {
 
     private final ProductFormat productFormat = new ProductFormat();
 
+    public void showProductCatalogue(){
+        System.out.println(productFormat.outputProductFormat(productStorage.findAll()));
+    }
+
     public void showProductDetailsByReference(String reference){
         Product productFound = productStorage.findByReference(reference);
         String outputProductFormat = productFormat.outputProductDetailsFormat(productFound);
